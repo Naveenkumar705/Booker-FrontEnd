@@ -1,0 +1,125 @@
+/* Profile Page Styling */
+.profile-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Property Card */
+  .home-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .home-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .home-details {
+    padding: 15px;
+  }
+  
+  .home-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .home-location,
+  .home-type,
+  .home-price {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .home-status {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .home-status.hidden {
+    color: red;
+  }
+  
+  /* Property Actions */
+  .property-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Buttons */
+  .edit-btn {
+    background: #3498db;
+    color: #fff;
+  }
+  
+  .delete-btn {
+    background: #e74c3c;
+    color: #fff;
+  }
+  
+  .hide-btn {
+    background: #f1c40f;
+    color: #fff;
+  }
+  
+  /* Hover Effects */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .home-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .property-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
